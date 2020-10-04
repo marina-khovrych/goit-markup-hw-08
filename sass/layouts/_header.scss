@@ -48,7 +48,7 @@
   font-family: Raleway, sans-serif;
 }
 
-.link {
+.link, .link-contacts {
   color: $primary-text-color;
   font-weight: 500;
   font-size: 14px;
@@ -92,7 +92,7 @@
     }
   }
 }
-.info .link {
+.info .link-contacts {
   padding-top: 0;
   padding-bottom: 0;
   // width: 138px;
@@ -108,6 +108,7 @@
   }
 }
 .team-icon {
+  fill: #757575;
   margin-right: 10px;
   &:hover {
     fill: #2196f3;
@@ -183,6 +184,7 @@
   @media screen and (max-width: 767px) {
     justify-content: center;
     margin-top: 16px;
+    
   }
 }
 .info .item + .item {
@@ -228,4 +230,7 @@
     margin: 0;
     padding: 0;
   }
+}
+.link-contacts {
+  color: #757575;
 }

@@ -117,7 +117,7 @@ address {
   font-family: Raleway, sans-serif;
 }
 
-.link {
+.link, .link-contacts {
   color: #212121;
   font-weight: 500;
   font-size: 14px;
@@ -133,7 +133,7 @@ address {
 }
 
 @media screen and (max-width: 767px) {
-  .link {
+  .link, .link-contacts {
     padding-bottom: 0;
     padding-top: 40px;
     font-size: 18px;
@@ -141,20 +141,20 @@ address {
   }
 }
 
-.link:hover {
+.link:hover, .link-contacts:hover {
   color: #2196f3;
 }
 
-.link:focus {
+.link:focus, .link-contacts:focus {
   color: #2196f3;
 }
 
-.link-nav {
+.link-nav, .link-contacts-nav {
   position: relative;
   color: #2196f3;
 }
 
-.link-nav::after {
+.link-nav::after, .link-contacts-nav::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -166,13 +166,13 @@ address {
 }
 
 @media screen and (max-width: 768px) {
-  .link-nav::after {
+  .link-nav::after, .link-contacts-nav::after {
     bottom: -8px;
     position: absolute;
   }
 }
 
-.info .link {
+.info .link-contacts {
   padding-top: 0;
   padding-bottom: 0;
 }
@@ -192,6 +192,7 @@ address {
 }
 
 .team-icon {
+  fill: #757575;
   margin-right: 10px;
 }
 
@@ -343,6 +344,10 @@ address {
     margin: 0;
     padding: 0;
   }
+}
+
+.link-contacts {
+  color: #757575;
 }
 
 .my-btn {
@@ -806,9 +811,9 @@ address {
   background-color: #2196f3;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .footer-form {
-    display: inline-table;
+    display: flex;
   }
 }
 
@@ -825,6 +830,14 @@ address {
   padding: 15px 16px;
   outline: 0;
   color: #fff;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-input {
+    display: flex;
+    width: 358px;
+    margin-right: 12px;
+  }
 }
 
 .footer-class {
@@ -918,6 +931,12 @@ address {
   padding: 10px 32px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   margin-top: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  .btn-footer {
+    margin-top: 0;
+  }
 }
 
 .icon-send {
