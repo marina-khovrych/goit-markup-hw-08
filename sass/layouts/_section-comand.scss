@@ -10,8 +10,11 @@
   padding-top: 0;
 }
 .section-comand {
+ 
   padding-bottom: 94px;
+  @media screen and (max-width: 1199px) {
   display: none;
+}
 }
 
 .image {
