@@ -36,12 +36,19 @@
   font-size: 14px;
   line-height: 1.71em;
   letter-spacing: 0.03em;
+  margin-bottom: 30px;
+
   @media screen and (min-width: 1200px) {
   margin-top: 0;
   margin-bottom: 0;
   padding-bottom: 0;
 }
 }
+// .text:last-child {
+//   @media screen and (max-width: 1199px) {
+//     margin-bottom: 0;
+// }
+// }
 .title {
   padding: 0;
   @media screen and (min-width: 768px) {

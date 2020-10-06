@@ -86,7 +86,7 @@
     height: 4px;
     background-color: #2196f3;
     border-radius: 2px;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       bottom: -8px;
       position: absolute;
     }
@@ -233,4 +233,18 @@
 }
 .link-contacts {
   color: #757575;
+}
+.icon-menu, .icon-сross {
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    fill: #2196f3;
+  }
+ 
+  &:focus {
+      fill: #2196f3;
+}
+
 }
