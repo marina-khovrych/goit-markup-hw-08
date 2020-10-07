@@ -32,3 +32,22 @@
     }
   }
 }
+.hero {
+  width: 480px;
+  height: 320px;
+  background-image: url("../images/Header_img.jpg");
+  background-size: 480px 320px;
+}
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (-webkit-min-device-pixel-ratio: 2),
+  screen and (-o-min-device-pixel-ratio: 2/1),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("../images/Header_img@2x.jpg");
+  }
+}
+
+
+
+
