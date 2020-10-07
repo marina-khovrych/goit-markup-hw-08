@@ -1267,39 +1267,54 @@ address {
 }
 
 .modal {
-  position: absolute;
-  opacity: 1;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1);
-  width: 100%;
-  max-width: 528px;
-  display: flex;
-  flex-direction: row-reverse;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  background: #ffffff;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  position: relative;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  padding: 40px;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .modal {
-    max-width: 450px;
+    position: absolute;
+    opacity: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    min-width: 528px;
+    min-height: 581px;
+    display: flex;
+    flex-direction: row-reverse;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background: #ffffff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 
 .close {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-  width: 30px;
-  height: 30px;
-  margin-right: 8px;
-  margin-top: 8px;
-  background: #ffffff;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  margin: 0;
+  padding: 9px;
+  line-height: 0;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
+  background-color: #fff;
+  cursor: pointer;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-icon:hover {
@@ -1311,11 +1326,6 @@ address {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   width: 11px;
   height: 11px;
-}
-
-.form {
-  padding-top: 40px;
-  padding-bottom: 40px;
 }
 
 .form-title {
@@ -1441,8 +1451,8 @@ address {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: #757575;
   justify-content: center;
@@ -1452,16 +1462,23 @@ address {
   margin-top: 0;
 }
 
+@media screen and (min-width: 1200px) {
+  .checkbox-container {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
+
 .bacdrop {
   position: fixed;
   top: 0;
+  right: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  bottom: 0;
   background-color: rgba(0, 0, 0, 0.2);
-  opacity: 1;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 93px 15px;
+  overflow-y: scroll;
 }
 
 .bacdrop.is-hidden {
@@ -1483,8 +1500,15 @@ address {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   background-size: auto;
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
+}
+
+@media screen and (min-width: 1200px) {
+  .icon-form {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 .form-field:focus-within > .icon-form {
