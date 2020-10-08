@@ -26,7 +26,7 @@
     margin-top: 0;
     margin-bottom: 30px;
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 1199px) {
       font-size: 26px;
       line-height: 1.61em;
     }
@@ -34,10 +34,10 @@
 }
 .hero {
   
-  width: 480px;
+  // width: 480px;
   height: 400px;
   background-image: url("../images/mobile/Header_img.jpg");
-  background-size: 480px 400px;
+  background-size: cover;
 }
 @media screen and (min-device-pixel-ratio: 2),
     screen and (-webkit-min-device-pixel-ratio: 2),
@@ -52,10 +52,10 @@
 
 .hero {
  
-  width: 768px;
+  // width: 768px;
   height: 400px;
   background-image: url("../images/tablet/Header_img.jpg");
-  background-size: 768px 400px;
+  background-size: cover;
 }
 @media screen and (min-device-pixel-ratio: 2),
   screen and (-webkit-min-device-pixel-ratio: 2),
@@ -69,10 +69,10 @@
 }
 .hero {
 
-  width: 1600px;
+  // width: 1600px;
   height: 600px;
   background-image: url("../images/desctop/bcg.jpg");
-  background-size: 1600px 600px;
+  background-size: cover;
 }
 @media screen and (min-device-pixel-ratio: 2),
   screen and (-webkit-min-device-pixel-ratio: 2),
