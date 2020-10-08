@@ -51,7 +51,7 @@
 }
 
 .hero {
-  @media screen and (max-width: 1199px) {
+  // @media screen and (max-width: 1199px) {
   width: 768px;
   height: 400px;
   background-image: url("../images/tablet/Header_img.jpg");
@@ -64,11 +64,11 @@
   screen and (min-resolution: 2dppx) {
   .hero {
     background-image: url("../images/tablet/Header_img@2x.jpg");
-  }
+  // }
 }
 }
 .hero {
-  @media screen and (min-width: 1200px) {
+  // @media screen and (min-width: 1200px) {
   width: 1600px;
   height: 600px;
   background-image: url("../images/desctop/bcg.jpg");
@@ -83,5 +83,5 @@
     background-image: url("../images/desctop/bcg@2x.jpg");
   }
 }
-}
+// }
 
