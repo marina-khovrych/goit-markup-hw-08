@@ -33,7 +33,7 @@
   }
 }
 .hero {
-  @media screen and (max-width: 767px) {
+  // @media screen and (max-width: 767px) {
   width: 480px;
   height: 400px;
   background-image: url("../images/mobile/Header_img.jpg");
@@ -46,7 +46,7 @@
     screen and (min-resolution: 2dppx) {
   .hero {
     background-image: url("../images/mobile/Header_img@2x.jpg");
-  }
+  // }
 }
 }
 
