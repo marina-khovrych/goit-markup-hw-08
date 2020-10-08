@@ -425,7 +425,7 @@ address {
 
 @media screen and (max-width: 767px) {
   .hero {
-    background-image: url("../images/mobile/Header_img.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/mobile/Header_img.jpg");
   }
 }
 
@@ -437,13 +437,13 @@ address {
 
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: url("../images/tablet/Header_img.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/tablet/Header_img.jpg");
   }
 }
 
 @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .hero .hero {
-    background-image: url("../images/tablet/Header_img@2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/tablet/Header_img@2x.jpg");
   }
 }
 
@@ -452,13 +452,13 @@ address {
     height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: url("../images/desctop/bcg.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/desctop/bcg.jpg");
   }
 }
 
 @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .hero .hero {
-    background-image: url("../images/desctop/bcg@2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/desctop/bcg@2x.jpg");
   }
 }
 

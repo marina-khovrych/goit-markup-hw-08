@@ -37,7 +37,7 @@
   
   // // width: 480px;
   // height: 400px;
-  background-image: url("../images/mobile/Header_img.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/mobile/Header_img.jpg");
   // background-size: cover;
 }
 @media screen and (min-device-pixel-ratio: 2),
@@ -53,14 +53,14 @@
   @media screen and (min-width: 768px) {
   // // width: 768px;
   // height: 400px;
-  background-image: url("../images/tablet/Header_img.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/tablet/Header_img.jpg");
   // background-size: cover;
 }
 @media screen and (min-device-pixel-ratio: 2),
 			screen and (min-resolution: 192dpi),
 			screen and (min-resolution: 2dppx) {
   .hero {
-    background-image: url("../images/tablet/Header_img@2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/tablet/Header_img@2x.jpg");
   } 
 }
 }
@@ -70,14 +70,14 @@
   height: 600px;
   padding-top: 200px;
 		padding-bottom: 200px;
-  background-image: url("../images/desctop/bcg.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/desctop/bcg.jpg");
   // background-size: cover;
 }
 @media screen and (min-device-pixel-ratio: 2),
 			screen and (min-resolution: 192dpi),
 			screen and (min-resolution: 2dppx) {
   .hero {
-    background-image: url("../images/desctop/bcg@2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/desctop/bcg@2x.jpg");
   }
 }
 }
