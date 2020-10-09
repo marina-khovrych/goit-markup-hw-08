@@ -60,7 +60,6 @@ address {
   margin-left: auto;
   margin-right: auto;
   height: 60px;
-  background-color: #ffffff;
   display: flex;
   align-items: center;
 }
@@ -378,6 +377,9 @@ address {
   text-align: center;
   letter-spacing: 0.06em;
   padding: 10px 32px;
+  border: 0;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  outline: transparent;
 }
 
 .my-btn:focus {
@@ -1005,8 +1007,20 @@ address {
   }
 }
 
+@media screen and (max-width: 1199px) {
+  .footer-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .footer-input {
   width: 100%;
+}
+
+.footer-input {
+  font-weight: 400;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
@@ -1018,6 +1032,12 @@ address {
   padding: 15px 16px;
   outline: 0;
   color: #fff;
+}
+
+@media screen and (min-width: 468px) {
+  .footer-input {
+    width: 450px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1296,11 +1316,16 @@ address {
   padding-left: 0;
 }
 
+@media screen and (max-width: 1199px) {
+  .portfolio {
+    margin-bottom: 60px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .portfolio {
     display: flex;
     flex-wrap: wrap;
-    margin: -15px;
   }
 }
 
@@ -1310,7 +1335,10 @@ address {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  padding: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-right: 35px;
+  padding-left: 35px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1470,6 +1498,7 @@ address {
   border: 2px solid black;
   border-radius: 2px;
   margin-right: 7px;
+  flex-shrink: 0;
 }
 
 .checkbox {

@@ -58,17 +58,26 @@
     @media screen and (min-width: 1200px) {
     display: flex;
     }
-  }
+    @media screen and (max-width: 1199px) {
+      display: flex;
+    flex-direction: column;
+    align-items: center;
+  } }
   &-input {
+    width: 100%;
+  }
+
+  &-input {
+    @media screen and (min-width: 468px) {
+      width: 450px;
+    }
     @media screen and (min-width: 1200px) {
       display: flex;
       width: 358px;
       margin-right: 12px;
      }
-    //  @media screen and (min-width: 768px) {
-    //    width: 450px;
-    //   }  
-    width: 100%;
+   
+    font-weight: 400;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-sizing: border-box;
